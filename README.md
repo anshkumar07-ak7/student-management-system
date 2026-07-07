@@ -1,2 +1,26 @@
-# student-management-system
-Python-based Student Management System with CRUD operations and file handling.
+students = []
+
+while True:
+    print("\n===== Student Management System =====")
+    print("1. Add Student")
+    print("2. View Students")
+    print("3. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        name = input("Enter Student Name: ")
+        students.append(name)
+        print("Student Added Successfully!")
+
+    elif choice == "2":
+        print("\nStudent List:")
+        for student in students:
+            print(student)
+
+    elif choice == "3":
+        print("Thank You!")
+        break
+
+    else:
+        print("Invalid Choice!")
